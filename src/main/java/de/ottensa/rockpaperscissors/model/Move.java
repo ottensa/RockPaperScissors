@@ -18,7 +18,7 @@ public enum Move {
 	Paper {
 		@Override
 		public boolean isBetterThan(Move move) {
-			return (Rock == move);
+			return (Rock == move || Fountain == move);
 		}
 	},
 	
@@ -26,6 +26,13 @@ public enum Move {
 		@Override
 		public boolean isBetterThan(Move move) {
 			return (Paper == move);
+		}
+	},
+	
+	Fountain {
+		@Override
+		public boolean isBetterThan(Move move) {
+			return (Rock == move || Scissors == move);
 		}
 	};
 	

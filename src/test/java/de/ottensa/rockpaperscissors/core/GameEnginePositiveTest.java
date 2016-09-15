@@ -23,12 +23,19 @@ public class GameEnginePositiveTest {
 			{Move.Rock,		Move.Rock,		Result.Draw},
 			{Move.Rock,		Move.Paper,		Result.Loose},
 			{Move.Rock,		Move.Scissors,	Result.Win},
+			{Move.Rock,		Move.Fountain,	Result.Loose},
 			{Move.Paper,	Move.Rock,		Result.Win},
 			{Move.Paper,	Move.Paper,		Result.Draw},
 			{Move.Paper,	Move.Scissors,	Result.Loose},
+			{Move.Paper,	Move.Fountain,	Result.Win},
 			{Move.Scissors, Move.Rock,		Result.Loose},
 			{Move.Scissors, Move.Paper,		Result.Win},
 			{Move.Scissors, Move.Scissors,	Result.Draw},
+			{Move.Scissors, Move.Fountain,	Result.Loose},
+			{Move.Fountain, Move.Rock,		Result.Win},
+			{Move.Fountain, Move.Paper,		Result.Loose},
+			{Move.Fountain, Move.Scissors,	Result.Win},
+			{Move.Fountain, Move.Fountain,	Result.Draw},
 		});
 	}
 
