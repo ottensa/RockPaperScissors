@@ -24,6 +24,11 @@ public class MoveScissorsTest {
 	}
 	
 	@Test
+	public void testScissorsIsBetterThanFountain() {
+		assertFalse("Scissors should not be better than Fountain", candidate.isBetterThan(Move.Fountain));
+	}
+	
+	@Test
 	public void testScissorsIsBetterThanNull() {
 		assertFalse("Scissors should not be better than null", candidate.isBetterThan(null));
 	}

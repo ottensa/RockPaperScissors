@@ -24,6 +24,11 @@ public class MoveRockTest {
 	}
 	
 	@Test
+	public void testRockIsBetterThanFountain() {
+		assertFalse("Rock should not be better than Fountain", candidate.isBetterThan(Move.Fountain));
+	}
+	
+	@Test
 	public void testRockIsBetterThanNull() {
 		assertFalse("Rock should not be better than null", candidate.isBetterThan(null));
 	}
