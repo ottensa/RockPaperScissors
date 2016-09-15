@@ -8,7 +8,7 @@ The basic branch covers the basic game with the three moves 'Rock', 'Paper' and 
 * Scissors beats Paper
 * Paper beats Rock
 
-The advanced branch covers the game with the forr moves 'Rock', 'Paper', 'Scissors' and 'Fountain'
+The advanced branch covers the game with the four moves 'Rock', 'Paper', 'Scissors' and 'Fountain'
 
 * Rock beats Scissors
 * Scissors beats Paper
@@ -38,7 +38,7 @@ $ Content-Length: 0
 $ Date: Thu, 15 Sep 2016 15:58:40 GMT
 ```
 
-2) Now we know that our game is at ```http://localhost:8080/games/1``` and to make our move (Rock, Paper, Scissors) we need to make a PUT request with our move in JSON format as request body to that resource
+2) Now we know that our game is at ```http://localhost:8080/games/1``` and to make our move ("Rock", "Paper", "Scissors") we need to make a PUT request with our move in JSON format as request body to that resource
 ```
 $ curl -i -H "Content-Type: application/json" -X PUT -d '"Rock"' http://localhost:8080/games/1
 $ HTTP/1.1 200 OK
